@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — DevClip Pro</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.7;
+        color: #1e293b;
+        background: #f8fafc;
+        padding: 2rem 1rem;
+      }
+      .container {
+        max-width: 720px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 12px;
+        padding: 3rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font-size: 1.75rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+        color: #0f172a;
+      }
+      .subtitle {
+        color: #64748b;
+        font-size: 0.875rem;
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #e2e8f0;
+      }
+      h2 {
+        font-size: 1.125rem;
+        font-weight: 700;
+        margin-top: 2rem;
+        margin-bottom: 0.75rem;
+        color: #0f172a;
+      }
+      p,
+      li {
+        font-size: 0.9375rem;
+        margin-bottom: 0.75rem;
+        color: #334155;
+      }
+      ul {
+        padding-left: 1.5rem;
+      }
+      li {
+        margin-bottom: 0.5rem;
+      }
+      strong {
+        color: #0f172a;
+      }
+      a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .badge {
+        display: inline-block;
+        padding: 0.125rem 0.5rem;
+        background: #dbeafe;
+        color: #1d4ed8;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: 600;
+      }
+      .back-link {
+        display: inline-block;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #e2e8f0;
+        color: #64748b;
+        font-size: 0.875rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">
+        DevClip Pro — Chrome Extension · Last updated: April 2026
+      </p>
+
+      <h2>1. Introduction</h2>
+      <p>
+        DevClip Pro ("we", "our", "the extension") is a Chrome browser extension
+        that helps developers save, organize, and search code snippets from web
+        pages. This privacy policy explains what data we collect, how we use it,
+        and your rights regarding your data.
+      </p>
+
+      <h2>2. Data We Collect</h2>
+
+      <h3 style="font-size: 1rem; margin-top: 1.25rem; margin-bottom: 0.5rem">
+        2.1 Free Plan <span class="badge">Local Only</span>
+      </h3>
+      <p>
+        When using the Free plan, <strong>all data is stored locally</strong> on
+        your device using the Chrome Storage API. We do not collect, transmit,
+        or store any of your data on our servers. This includes:
+      </p>
+      <ul>
+        <li>Code snippets you save</li>
+        <li>Tags you create</li>
+        <li>Your extension settings (theme, preferences)</li>
+      </ul>
+      <p><strong>We have zero access to your Free plan data.</strong></p>
+
+      <h3 style="font-size: 1rem; margin-top: 1.25rem; margin-bottom: 0.5rem">
+        2.2 Pro Plan <span class="badge">Cloud Sync</span>
+      </h3>
+      <p>
+        When you upgrade to Pro and opt into cloud sync, the following data is
+        stored on our servers (Supabase, hosted on AWS):
+      </p>
+      <ul>
+        <li><strong>Email address</strong> — for account creation and login</li>
+        <li>
+          <strong>Code snippets</strong> — title, code content, detected
+          language, source URL
+        </li>
+        <li><strong>Tags</strong> — tag names and associations</li>
+        <li><strong>Subscription status</strong> — managed by Lemon Squeezy</li>
+      </ul>
+
+      <h2>3. Data We Do NOT Collect</h2>
+      <ul>
+        <li>Browsing history or web activity</li>
+        <li>Personal information beyond email</li>
+        <li>Financial information (handled entirely by Lemon Squeezy)</li>
+        <li>Location data</li>
+        <li>Device identifiers or fingerprints</li>
+        <li>Analytics or usage tracking data</li>
+      </ul>
+
+      <h2>4. How We Use Your Data</h2>
+      <ul>
+        <li>
+          <strong>Authentication</strong> — to identify you and provide access
+          to your account
+        </li>
+        <li>
+          <strong>Cloud sync</strong> — to synchronize your snippets across
+          devices
+        </li>
+        <li>
+          <strong>AI tagging</strong> — when you request AI tag suggestions,
+          your code snippet is sent to the Anthropic Claude API for analysis. We
+          do not store the AI analysis results on our servers beyond the
+          suggested tags.
+        </li>
+      </ul>
+
+      <h2>5. AI Processing</h2>
+      <p>When you use the AI auto-tagging feature (Pro plan only):</p>
+      <ul>
+        <li>
+          Your code snippet is sent to
+          <a href="https://www.anthropic.com" target="_blank"
+            >Anthropic's Claude API</a
+          >
+          for analysis
+        </li>
+        <li>
+          Only the code content, detected language, and snippet title are sent
+        </li>
+        <li>We do not use your code to train AI models</li>
+        <li>Anthropic's data retention policies apply to the API request</li>
+      </ul>
+
+      <h2>6. Third-Party Services</h2>
+      <ul>
+        <li>
+          <strong>Supabase</strong> (database & authentication) —
+          <a href="https://supabase.com/privacy" target="_blank"
+            >Privacy Policy</a
+          >
+        </li>
+        <li>
+          <strong>Lemon Squeezy</strong> (payment processing) —
+          <a href="https://www.lemonsqueezy.com/privacy" target="_blank"
+            >Privacy Policy</a
+          >
+        </li>
+        <li>
+          <strong>Anthropic</strong> (AI processing) —
+          <a href="https://www.anthropic.com/privacy" target="_blank"
+            >Privacy Policy</a
+          >
+        </li>
+      </ul>
+
+      <h2>7. Data Storage & Security</h2>
+      <ul>
+        <li>
+          Cloud data is stored on Supabase (AWS infrastructure, Seoul region)
+        </li>
+        <li>All data transmission uses HTTPS encryption</li>
+        <li>
+          Database access is protected by Row Level Security (RLS) — each user
+          can only access their own data
+        </li>
+        <li>
+          API keys and secrets are stored as environment variables, never in
+          client code
+        </li>
+      </ul>
+
+      <h2>8. Data Retention & Deletion</h2>
+      <ul>
+        <li>
+          <strong>Free plan:</strong> Data exists only on your device.
+          Uninstalling the extension removes all data.
+        </li>
+        <li>
+          <strong>Pro plan:</strong> You can delete your account and all
+          associated data by contacting us. Upon subscription cancellation, your
+          data remains accessible until you request deletion.
+        </li>
+      </ul>
+
+      <h2>9. Your Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>
+          Access your data (available through the extension's export feature)
+        </li>
+        <li>
+          Delete your data (contact us or use the "Delete all data" option in
+          settings)
+        </li>
+        <li>Export your data (JSON or Markdown export in the extension)</li>
+        <li>Cancel your subscription at any time</li>
+      </ul>
+
+      <h2>10. Children's Privacy</h2>
+      <p>
+        DevClip Pro is not intended for children under 13. We do not knowingly
+        collect data from children under 13.
+      </p>
+
+      <h2>11. Changes to This Policy</h2>
+      <p>
+        We may update this privacy policy from time to time. We will notify
+        users of significant changes through the extension or via email.
+      </p>
+
+      <h2>12. Contact</h2>
+      <p>
+        If you have questions about this privacy policy or your data, please
+        contact us:
+      </p>
+      <ul>
+        <li>
+          GitHub:
+          <a href="https://github.com/Dev-2A/devclip-pro/issues" target="_blank"
+            >Open an issue</a
+          >
+        </li>
+        <li>
+          Email: <a href="mailto:yehee826@gmail.com">yehee826@gmail.com</a>
+        </li>
+      </ul>
+
+      <div class="back-link">
+        <a href="index.html">← Back to DevClip Pro</a>
+      </div>
+    </div>
+  </body>
+</html>
